@@ -68,3 +68,43 @@ if poz1 == poz2:
     print(f'The sum of the elements that are between the first and last positive element: {poz1}')
 else:
     print('Error')
+
+print()
+print()
+
+
+
+print('\t' * 3, '*'* 10, 'Task 2', 10 * '*')
+NUMS_SIZE = 10
+parni = []
+neparni =[]
+negotiv = []
+pozitiv = []
+numbers = []
+
+for i in range(NUMS_SIZE):
+    numbers.append(random.randint(-5, 5))
+new = numbers.copy()
+print()
+for i in new:
+    if i ==0:
+        continue
+    elif i%2 == 0:
+        parni.append(i)
+
+    elif i%2 == 1:
+        neparni.append(i)
+
+    if new[i] < 0:
+        negotiv.append(new[i])
+
+    elif new[i] > 0:
+        pozitiv.append(new[i])
+
+print(f'Создан новый список: {new}')
+print(f'List с четными числами: {parni}')
+print(f'List с нечетными числами: {neparni}')
+print(f'List с отрицательными числами: {negotiv}')
+print(f'List с положительными числами: {pozitiv}')
+
+
