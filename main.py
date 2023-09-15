@@ -101,10 +101,10 @@ for i in new:
     elif new[i] > 0:
         pozitiv.append(new[i])
 
-print(f'Создан новый список: {new}')
-print(f'List с четными числами: {parni}')
-print(f'List с нечетными числами: {neparni}')
-print(f'List с отрицательными числами: {negotiv}')
-print(f'List с положительными числами: {pozitiv}')
+print(f'New list created: {new}')
+print(f'List with even numbers: {parni}')
+print(f'List with odd numbers: {neparni}')
+print(f'List with negative numbers: {negotiv}')
+print(f'List with positive numbers: {pozitiv}')
 
 
